@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="fill_parent"
+    tools:context="com.fd.gpsmonitortracker.NewCellularActivity"
+    android:layout_width="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellular_tv_name"
+            android:id="@+id/textView2"
+            android:padding="5dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCellularName"
+            android:layout_gravity="center_horizontal"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellular_tv_number"
+            android:id="@+id/textView10"
+            android:padding="5dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCellularNumber"
+            android:layout_gravity="center_horizontal"
+            android:textSize="13dp"
+            android:textIsSelectable="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellullar_ckb_is_notify"
+            android:id="@+id/ckbCellularIsNotify"
+            android:checked="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ff676767"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cellular_tv_alert_is_notify"
+            android:id="@+id/textView11"
+            android:padding="5dp"
+            android:textIsSelectable="false"
+            android:textSize="11dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cellullar_btn_save_cellular"
+            android:id="@+id/btnSaveCellullar"
+            android:layout_gravity="center_horizontal"
+            android:onClick="saveCellular"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</ScrollView>

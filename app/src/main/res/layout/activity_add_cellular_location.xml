@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_height="fill_parent"
+tools:context="com.fd.gpsmonitortracker.AddCellularLocationActivity"
+android:layout_width="fill_parent">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="fill">
+</ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_btn_add"
+        android:textSize="14sp"
+        android:id="@+id/btnAddCellularLocation"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        android:layout_above="@+id/btnAddCellularLocation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cellular_location_tv_cellulars"
+                android:id="@+id/textView2"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnerNumbersToAddCellularsLocations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/message_spinner_direction_prompt"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp" />
+
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/expandableListViewAddCellularsLocations"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

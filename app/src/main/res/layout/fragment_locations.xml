@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:nestedScrollingEnabled="false"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:gravity="fill_vertical">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location_btn_new_location"
+        android:id="@+id/btnNewLocation"
+        android:layout_gravity="center"
+        android:onClick="newLocation"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:nestedScrollingEnabled="false"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:gravity="fill_horizontal|fill|fill_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btnNewLocation">
+
+
+        <ExpandableListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/expandableListViewLocations"
+            android:layout_gravity="center_horizontal"
+            android:headerDividersEnabled="true"
+            android:clickable="true" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
